@@ -55,7 +55,7 @@ BOOL CSmtpMailDlg::OnInitDialog()
 	GetDlgItem(IDC_ServerAddress)->SetWindowText("smtp.sina.cn");
 	GetDlgItem(IDC_Port)->SetWindowText("25"); 
 	GetDlgItem(IDC_UserName)->SetWindowText("terencerichtofen@sina.cn"); 
-	GetDlgItem(IDC_Password)->SetWindowText("terencefjy"); 
+	GetDlgItem(IDC_Password)->EnableWindow(true);
 	GetDlgItem(IDC_From)->SetWindowText("terencerichtofen@sina.cn");
 	GetDlgItem(IDC_To)->SetWindowText("857396722@qq.com"); 
 	GetDlgItem(IDC_Subject)->SetWindowText("Hello! "); 
