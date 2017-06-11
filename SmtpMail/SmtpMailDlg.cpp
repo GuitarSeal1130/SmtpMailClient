@@ -105,7 +105,6 @@ HCURSOR CSmtpMailDlg::OnQueryDragIcon()
 
 void CSmtpMailDlg::OnBnClickedSend()
 {
-	// TODO: 在此添加控件通知处理程序代码
 	CString a,b,c,d,e,f,g,h;
 	GetDlgItem(IDC_ServerAddress)->GetWindowText(a); 
 	GetDlgItem(IDC_Port)->GetWindowText(b); 
@@ -135,22 +134,10 @@ void CSmtpMailDlg::OnBnClickedSend()
 	
 	SmtpMail mail(address,port,username,password,from,to,subject,message);
 	mail.SendMail();
-	
-	/*
-	delete address;
-	delete port;
-	delete username;
-	delete password;
-	delete from;
-	delete to;
-	delete subject;
-	delete message;
-	*/
 }
 
 void CSmtpMailDlg::OnBnClickedCancel()
 {
-	// TODO: 在此添加控件通知处理程序代码
 	CDialog::OnCancel();
 }
 
